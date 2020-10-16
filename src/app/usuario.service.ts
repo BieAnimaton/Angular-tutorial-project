@@ -17,4 +17,25 @@ export class UsuarioService {
 
     return usuario
   }
+
+  public listaUsuario(): Usuario[] {
+    return [
+      {
+        nome: "Gabriel",
+        email: "gcbragion@gmail.com"
+      },
+      {
+        nome: "Pedro",
+        email: "pepgameplays.003@gmail.com"
+      },
+      {
+        nome: "Luca",
+        email: "narigudo,luca@gmail.com"
+      },
+      {
+        nome: "Ninja",
+        email: "amorpelaAlice.ninja@gmail.com"
+      },
+    ]
+  }
 }

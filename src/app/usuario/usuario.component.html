@@ -1,7 +1,18 @@
-<p>usuario works!</p>
-<div>
-    <h1>Usuário</h1>
-
-    <h2>Nome: {{usuario.nome}}</h2>
-    <p>Email: {{usuario.email}}</p> 
-</div>
+<table border="1">
+    <tr>
+        <th>
+            Nome:
+        </th>
+        <th>
+            Email:
+        </th>
+    </tr>
+    <tr *ngFor="let usuario of usuarios;">
+        <td>
+            {{usuario.nome}}
+        </td>
+        <td>
+            {{usuario.email}}
+        </td>
+    </tr>
+</table>
