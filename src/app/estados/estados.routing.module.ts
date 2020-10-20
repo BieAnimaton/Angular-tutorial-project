@@ -2,17 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { UsuarioComponent } from './usuario.component';
-import { UsuarioCadastroComponent } from './cadastro/usuario-cadastro.component';
+import { EstadosComponent } from './estados.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    component: UsuarioComponent
-  },
-  {
-    path: 'add',
-    component: UsuarioCadastroComponent
+    component: EstadosComponent
   }
 ];
 
@@ -23,4 +18,4 @@ const appRoutes: Routes = [
   ],
   exports: [ RouterModule ]
 })
-export class UsuarioRoutingModule { }
+export class EstadosRoutingModule { }

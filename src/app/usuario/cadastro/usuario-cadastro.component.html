@@ -1,0 +1,13 @@
+<form>
+    <div>
+        <label>Nome: </label>
+        <input tpye="text" name="nome" [(ngModel)]="usuario.nome"/>
+    </div>
+    <div>
+        <label>Email: </label>
+        <input type="email" name="email" [(ngModel)]="usuario.email"/>
+    </div>
+    <div>
+        <button (click)="salvar()">Salvar</button>
+    </div>
+</form>
