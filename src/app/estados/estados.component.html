@@ -9,6 +9,9 @@
         <th>
             Nome
         </th>
+        <th>
+            Regiao
+        </th>
     </tr>
     <tr *ngFor="let estado of estados">
         <td>
@@ -19,6 +22,9 @@
         </td>
         <td>
             {{estado.nome}}
+        </td>
+        <td>
+            {{estado.regiao.nome}}
         </td>
     </tr>
 </table>
